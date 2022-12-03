@@ -1,0 +1,50 @@
+.topic {
+    display: flex;
+    padding: 15px;
+    border-top: 0.3rem solid #0C2D25;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #E4E9E7;
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+    height: 5rem;
+
+}
+
+.topic a {
+    font-family: Noto Sans, Arial;
+    font-size: x-large;
+    font-weight: 700;
+    color: #0C2D25;
+}
+
+.arrow {
+    background-color: transparent;
+    border: medium none;
+    width: 60%;
+    height: 5rem;
+}
+
+.arrow img {
+    width: 1rem;
+    margin-left: 94%;
+}
+
+.topicDescription {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -1.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #E4E9E7;
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+    font-family: Noto Sans, Arial;
+    font-size: x-large;
+    padding-left: 3rem;
+}
