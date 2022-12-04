@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import cl from "./TopicItem.module.css"
 import {Collapse} from "react-collapse";
-import arrow from "./arrow.png"
+import arrow from "../../../resources/arrow.png"
 
 const TopicItem = (props) => {
     const [collapsed, setCollapsed] = useState(false);
