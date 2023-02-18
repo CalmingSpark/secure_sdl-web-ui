@@ -1,23 +1,23 @@
 import React, {useState} from 'react';
-import cl from "./TopicItem.module.css"
+import cl from "./TopicItem.module.css";
 import {Collapse} from "react-collapse";
-import arrow from "../../../resources/arrow.png"
+import arrow from "../../../resources/arrow.png";
+import RestService from "../../../API/RestService";
 
 const TopicItem = (props) => {
     const [collapsed, setCollapsed] = useState(false);
+    const variable = RestService.getTopics();
     return (
         <div>
-            <div className={cl.topic}>
+            <button className={cl.topic} onClick={() => setCollapsed(!collapsed)}>
                 <a href={props.link}>{props.value}</a>
-                <button className={cl.arrow} onClick={() => setCollapsed(!collapsed)}>
-                    <img src={arrow}/>
-                </button>
-            </div>
-
+                <img src={arrow}/>
+            </button>
 
             <Collapse isOpened={collapsed}>
                 <div className={cl.topicDescription}>
                     {props.description}
+
                 </div>
             </Collapse>
         </div>

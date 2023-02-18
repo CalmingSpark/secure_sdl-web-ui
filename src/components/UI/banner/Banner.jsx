@@ -6,7 +6,9 @@ const Banner = (props) => {
     return (
         <header>
             <div className={cl.banner}>
-                <img src={logo}/>
+                <a href="">
+                    <img src={logo}/>
+                </a>
             </div>
         </header>
     );

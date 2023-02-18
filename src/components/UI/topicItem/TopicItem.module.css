@@ -1,36 +1,33 @@
 .topic {
     display: flex;
-    padding: 15px;
+    padding-left: 15px;
+
+    border: medium none;
     border-top: 0.3rem solid #0C2D25;
     margin-top: 15px;
     justify-content: space-between;
     align-items: center;
     margin-left: 5%;
     margin-right: 5%;
+    min-width: 90%;
     background-color: #E4E9E7;
     box-sizing: border-box;
-    border-radius: 0.2rem;
-    height: 5rem;
-
+    min-height: 5rem;
 }
 
 .topic a {
+    text-decoration: none;
     font-family: Noto Sans, Arial;
     font-size: x-large;
     font-weight: 700;
     color: #0C2D25;
 }
 
-.arrow {
-    background-color: transparent;
-    border: medium none;
-    width: 60%;
-    height: 5rem;
-}
 
-.arrow img {
+.topic img {
     width: 1rem;
-    margin-left: 94%;
+    position: relative;
+    margin-right: 2rem;
 }
 
 .topicDescription {

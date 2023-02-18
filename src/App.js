@@ -1,7 +1,8 @@
 import React from "react";
 import Banner from "./components/UI/banner/Banner";
 import './styles/App.css';
-import Topics from "./Topics/Topics";
+import Topics from "./topics/Topics";
+import Footer from "./components/UI/footer/Footer";
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
 
             <Banner/>
             <Topics/>
+            <Footer/>
         </div>
     );
 }
